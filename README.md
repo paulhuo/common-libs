@@ -10,6 +10,12 @@
 通用工具函数模块，**不依赖具体业务逻辑**，适用于所有 Go 项目：
 
 - `stringx`：字符串处理（大小写转换、随机字符串、截断）
+```go
+// 示例
+snake := stringx.ToSnake("HelloWorld") // hello_world
+randStr := stringx.Random(8)           // 随机字符串
+```
+
 - `timeutil`：时间处理（格式化、解析、区间计算）
 - `ctxx`：请求上下文扩展（trace-id、app-id、user-id 提取与注入）
 - `httpx`：简洁的 HTTP 客户端封装（支持 JSON/form/multipart）
